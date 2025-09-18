@@ -46,7 +46,7 @@ tests
 
 ## Repository Structure (Planned)
 
-` ``
+```
 lab3-js-oop-dice-docs-and-design/
 ├── docs/
 │ ├── adr/ # Architecture Decision Records
@@ -58,7 +58,7 @@ lab3-js-oop-dice-docs-and-design/
 ├── README.md # This file
 ├── CHANGELOG.md # Version history
 └── LICENSE.md # MIT License
-` ``
+```
 
 ## Design Decisions
 
