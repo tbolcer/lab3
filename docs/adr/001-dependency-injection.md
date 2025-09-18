@@ -33,7 +33,7 @@ as constructor parameters.
 
 ## Example
 
-` ``javascript
+```javascript
 // Dice roller with injected renderer dependency
 class DiceRoller {
 constructor(renderer) {
@@ -52,7 +52,7 @@ const visualRoller = new DiceRoller(asciiRenderer);
 // Same logic, different output
 textRoller.roll("2d6"); // Output: "You rolled 7 (3, 4)"
 visualRoller.roll("2d6"); // Output: ASCII art of dice faces
-` ``
+```
 
 ## Alternatives Considered
 

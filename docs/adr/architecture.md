@@ -34,7 +34,7 @@ User interfaces that interact with the dice system:
 
 ## Dependency Flow
 
-` ``mermaid
+```mermaid
 graph TD
 subgraph "External"
 User[User Input]
@@ -69,7 +69,7 @@ Renderer --> AsciiRender
 DiceRoller --> Statistics
 CLI --> Display
 TUI --> Display
-` ``
+```
 
 ## Key Design Principles- **CLI**: Command-line interface for terminal interaction
 
@@ -77,8 +77,10 @@ TUI --> Display
 (optional)
 - **TextRenderer**: Simple text output
 - **JSONRenderer**: JSON format output
+
 ## Dependency Flow
-` ``mermaid
+
+```mermaid
 graph TD
 subgraph "External"
 User[User Input]
@@ -113,7 +115,7 @@ Renderer --> AsciiRender
 DiceRoller --> Statistics
 CLI --> Display
 TUI --> Display
-` ``
+```
 
 ## Key Design Principles
 
