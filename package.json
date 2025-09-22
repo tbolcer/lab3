@@ -1,6 +1,6 @@
 {
   "name": "lab3",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A dice simulation demonstrating JS OOP, dependency injection, and quality practices",
   "main": "index.js",
   "scripts": {
