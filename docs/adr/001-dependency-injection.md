@@ -36,19 +36,21 @@ as constructor parameters.
 ```javascript
 // Dice roller with injected renderer dependency
 class DiceRoller {
-constructor(renderer) {
-this.renderer = renderer; // Injected display strategy
+    constructor(renderer) {
+        this.renderer = renderer; // Injected display strategy
+    }
+    roll(notation) {
+        const result = /* rolling logic */;
+        return this.renderer.render(result); // Use injected renderer
+    }
 }
-roll(notation) {
-const result = /* rolling logic */;
-return this.renderer.render(result); // Use injected renderer
-}
-}
+
 // Usage with different renderers
 const textRenderer = new TextRenderer();
 const asciiRenderer = new AsciiRenderer();
 const textRoller = new DiceRoller(textRenderer);
 const visualRoller = new DiceRoller(asciiRenderer);
+
 // Same logic, different output
 textRoller.roll("2d6"); // Output: "You rolled 7 (3, 4)"
 visualRoller.roll("2d6"); // Output: ASCII art of dice faces
